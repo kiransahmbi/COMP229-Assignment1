@@ -6,6 +6,7 @@
     "start": "node ./www"
   },
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
@@ -14,8 +15,6 @@
     "morgan": "~1.9.1"
   },
   "description": "Personal Portfolio",
-  
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kiransahmbi/COMP228-Assignment1.git"
