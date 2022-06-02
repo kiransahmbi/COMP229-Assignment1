@@ -2,17 +2,14 @@
 
 <%- include partials/navbar -%>   
 
-<!-- Programming -->
+<!-- Projects-->
 
 <div id="projects" class="py-3">
-    <div id="project-container">
-      <h1 class="font-weight-normal project-heading">Projects</h1>
+      <h1 class="font-weight-normal project-heading">Personal Projects</h1>
       <div class="container">
-        <h1 class="pt-4 pb-3 mt-3 mb-2 text-center project-category-heading">Application Projects</h1>
-
         <div class="row">
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/typing-exercise/">
+          <!-- Typing Exercise Project -->
+          <div class="col-md-6"><a target=”_blank” href="https://kiransahmbi.github.io/typing-exercise/">
             <div class="card mb-1 shadow-sm">
               <div class="card-header">Practise Typing App</div>
               <img class="portfolio-img" src="images/typing practise 1.png" />
@@ -23,7 +20,8 @@
             </div></a>
           </div>
 
-          <div class="col-md-4" data-toggle="modal" data-target="#modal-expense-tracker"><a>
+          <!-- Expense Tracker Project -->
+          <div class="col-md-6" data-toggle="modal" data-target="#modal-expense-tracker"><a>
             <div class="card mb-1 shadow-sm">
               <div class="card-header">Expense Tracker App</div>
               <img class="portfolio-img" src="images/expenser tracker thumbnail.jpg" />
@@ -34,126 +32,32 @@
             </div></a>
           </div>
 
-          <div class="col-md-4" data-toggle="modal" data-target="#modal-calculator"><a>
+          <!-- Air Quality Dashboard Project -->
+          <div class="col-md-6" data-toggle="modal" data-target="#modal-air-quality"><a>
             <div class="card mb-1 shadow-sm">
-              <div class="card-header">Calculator</div>
-              <img class="portfolio-img" src="images/calculator thumbnail.png" />
+              <div class="card-header">Dashboard for Monitoring Air Quality</div>
+              <img class="portfolio-img" src="images/dashboard pixelized.png" />
               <div class="card-body">
-                <p class="card-text">A desktop calculator application with memory functions.</p>
-                <small class="text-muted project-label">C# / WFA </small>
+                <p class="card-text">Visualizes data trends from 26 sites across Canada.</p>
+                <small class="text-muted project-label">Python / SQL / Matplotlib</small>
               </div>
             </div></a>
           </div>
 
-        </div>
-      </div>
-
-      <!-- Data Analysis -->
-        <div class="container">
-    
-          <h1 class="pt-4 pb-3 mt-5 mb-2 text-center project-category-heading">Data Analysis</h1>
-    
-          <div class="row">
-    
-            <div class="col-md-4" data-toggle="modal" data-target="#modal-air-quality"><a>
-              <div class="card mb-1 shadow-sm">
-                <div class="card-header">Dashboard for Monitoring Air Quality</div>
-                <img class="portfolio-img" src="images/dashboard pixelized.png" />
-                <div class="card-body">
-                  <p class="card-text">Visualizes data trends from 26 sites across Canada.</p>
-                  <small class="text-muted project-label">Python / SQL / Matplotlib</small>
-                </div>
-              </div></a>
-            </div>
-    
-            <div class="col-md-4"><a target=”_blank” href="images/AllergenFormulaMatrixConfidential.pdf">
-              <div class="card mb-1 shadow-sm">
-                <div class="card-header">Bakery Formula's Allergen Calculator</div>
-                <img class="portfolio-img" src="images/allergen formula matrix.png" />
-                <div class="card-body">
-                  <p class="card-text">Extracting ERP data to auto-generate allergen's in various production formulas.</p>
-                  <small class="text-muted project-label">Python / SQL / HTML</small>
-                </div>
-              </div></a>
-            </div>
-    
-          </div>
-        </div>
-
-  <!-- Web Development -->
-      <div class="container">
-        <h1 class="pt-4 pb-3 mt-5 mb-2 text-center project-category-heading">Web Development</h1>
-        <div class="row">
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/real-estate-website/">
+          <!-- Real Estate Website Project -->
+          <div class="col-md-6"><a target=”_blank” href="https://kiransahmbi.github.io/real-estate-website/">
             <div class="card mb-1 shadow-sm">
               <div class="card-header">Real Estate Website</div>
               <img class="portfolio-img" src="images/real estate website.png" />
               <div class="card-body">
-                <p class="card-text">This is a real estate website that showcases three properties.</p>
+                <p class="card-text">A real estate website that showcases various properties.</p>
                 <small class="text-muted project-label">HTML / CSS / Bootstrap</small>
               </div>
             </div></a>
           </div>
 
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/flowers-gallery/">
-            <div class="card mb-1 shadow-sm">
-              <div class="card-header">Flower Gallery</div>
-              <img class="portfolio-img" src="images/flowers gallery.png" />
-              <div class="card-body">
-                <p class="card-text">An interactive flower gallery, with favourites feature.</p>
-                <small class="text-muted project-label">Javascript / HTML / CSS</small>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/bmr-calculator/">
-            <div class="card mb-1 shadow-sm">
-              <div class="card-header">BMR Calculator</div>
-              <img class="portfolio-img" src="images/bmr calculator.png" />
-              <div class="card-body">
-                <p class="card-text">A BMR and Daily Recommended Calories Calculator.</p>
-                <small class="text-muted project-label">Javascript / HTML / CSS</small>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/zelda-game/">
-            <div class="card mb-1 shadow-sm">
-              <div class="card-header">Zelda Click Game</div>
-              <img class="portfolio-img" src="images/zelda game.png" />
-              <div class="card-body">
-                <p class="card-text">A zelda click game created using Canvas API.</p>
-                <small class="text-muted project-label">Javascript / HTML / CSS</small>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/product-sales-page/">
-            <div class="card mb-1 shadow-sm">
-              <div class="card-header">Product Sales Page</div>
-              <img class="portfolio-img" src="images/product sales page.png" />
-              <div class="card-body">
-                <p class="card-text">A sample sales page for the Samsung Galaxy Buds.</p>
-                <small class="text-muted project-label">HTML / CSS / Bootstrap</small>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="col-md-4"><a target=”_blank” href="https://kiransahmbi.github.io/registration-form/">
-            <div class="card mb-1 shadow-sm">
-              <div class="card-header">Registration Form</div>
-              <img class="portfolio-img" src="images/registration form.png" />
-              <div class="card-body">
-                <p class="card-text">A sample form built with Check & Custom Validation.</p>
-                <small class="text-muted project-label">Javascript / HTML / CSS</small>
-              </div>
-            </div></a>
-          </div>
         </div>
-
       </div>
-    </div>
 </div>
 
 <%- include partials/footer -%>

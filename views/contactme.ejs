@@ -6,7 +6,8 @@
 
 <div class="contact-me">
     <h1>Contact Me</h1><br>
-      
+
+    <!-- Contact Me Table -->
     <table class="table-contact-me table table-hover table-bordered">
       <tr>
         <td>Email</td>
@@ -22,24 +23,25 @@
       </tr>
     </table>
 
-    <h1>Or Send a Message!</h1><br>
-      <form id="contact-me-form" class="border" autocomplete="on" action="/">
-        <fieldset class="user-data">
-          <label for="Name">Name</label>
-          <input id="Name" type="text">
+    <!-- Contact Me Form -->
+    <form id="contact-me-form" class="" autocomplete="on" action="/">
+      <h1>Or Send a Message!</h1><br>
+      <fieldset class="user-data">
+        <label for="Name">Name</label>
+        <input id="Name" type="text">
 
-          <label for="email">Email Address</label>
-          <input id="email" type="email">
+        <label for="email">Email Address</label>
+        <input id="email" type="email">
 
-          <label for="phone">Phone Number</label>
-          <input id="phone" type="text">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="text">
 
-          <label for="message">Message</label>
-          <textarea id="message" type="text" rows="3"></textarea>
-        </fieldset>
+        <label for="message">Message</label>
+        <textarea id="message" type="text" rows="3"></textarea>
+      </fieldset>
 
-        <button type="submit" class="submit-button" id="register-btn" name="register">Submit!</button>
-      </form>
+      <button type="submit" class="submit-button" id="register-btn" name="register">Submit!</button>
+    </form>
 </div>
 
 <%- include partials/footer -%>

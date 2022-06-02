@@ -10,23 +10,23 @@ router.get('/contact-me', contactme);
 
 // Controllers
 function home(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {});
 }
 
 function aboutme(req, res, next) {
-  res.render('aboutme', { title: 'Express' });
+  res.render('aboutme', {});
 }
 
 function projects(req, res, next) {
-  res.render('projects', { title: 'Express' });
+  res.render('projects', {});
 }
 
 function services(req, res, next) {
-  res.render('services', { title: 'Express' });
+  res.render('services', {});
 }
 
 function contactme(req, res, next) {
-  res.render('contactme', { title: 'Express' });
+  res.render('contactme', {});
 }
 
 module.exports = router;
