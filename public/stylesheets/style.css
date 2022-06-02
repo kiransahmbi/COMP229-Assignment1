@@ -21,18 +21,40 @@ nav {
     background-color: rgba(43,103,119);
     width: 100%;
     margin: 0;
-    transition: 300ms;
 }
 
 nav a {
-  color: #cfc8bb;
   color: hsla(0,0%,100%,0.7);
 }
 
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-brand-container {
+  width: 45%;
+}
+
 .logo {
-  width: 15%;
+  width: 18%;
   border-radius: 10px;
   opacity: 0.95;
+}
+
+.nav-item {
+  padding: 0.5% 0 1%;
+}
+
+.nav-links {
+  padding: 0% 2vw;
+  margin: 2px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.nav-links:hover {
+  color: black;
 }
 
 .scrolled {
@@ -103,19 +125,6 @@ nav a {
 
 .header-button span:hover {
   background-color: hsla(0,0%,100%,0.5);
-}
-
-.link {
-  padding: 0.5rem 1rem;
-  margin: 2px;
-  transition: all 0.3s;
-  position: relative;
-  letter-spacing: 1px;
-}
-
-.link:hover {
-  color: black;
-  border-radius: 5px;
 }
 
 /* ABOUT ME */
