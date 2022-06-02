@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include partials/header -%>
+
+<%- include partials/navbar -%>   
+
+
+<!-- Header -->
+    <header class="header position-relative overflow-hidden px-1 my-md-1 shadow-sm" id="header">
+      <div class="mx-auto">
+        <div class="row">
+            <div rowspan=2 class="header-picture-container col-5">
+              <img class="header-portfolio-picture border-0" src="images/picture.png" />
+            </div>
+            <div class="header-description-container col-7">
+              <h1 class="display-4 font-weight-normal header-name">Hi I'm Kiran! <img class="handwave" src="images/handwave.png"></h1>
+              <p class="lead font-weight-normal header-tagline"><span>A Chemical Engineer with a passion for Software Development</span></p>
+              <p class="lead font-weight-normal header-button"><span>Learn About Me!</span></p>
+            </div>
+        </div>
+      </div>
+    </header>
+
+  <%- include partials/footer -%>

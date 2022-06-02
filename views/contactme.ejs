@@ -1,0 +1,45 @@
+<%- include partials/header -%>
+
+<%- include partials/navbar -%>  
+
+<!-- Contact Me -->
+
+<div class="contact-me">
+    <h1>Contact Me</h1><br>
+      
+    <table class="table-contact-me table table-hover table-bordered">
+      <tr>
+        <td>Email</td>
+        <td><a class="contact-link" href="mailto:kiransahmbi@yahoo.ca">kiransahmbi@yahoo.ca</a></td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td>647-xxx-xxx</td>
+      </tr>
+      <tr>
+        <td>Github</td>
+        <td><a class="contact-link" target=”_blank” href="https://github.com/kiransahmbi"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" title="Github" alt="github" width="40" height="40"/> </a></td>
+      </tr>
+    </table>
+
+    <h1>Or Send a Message!</h1><br>
+      <form id="contact-me-form" class="border" autocomplete="on" action="/">
+        <fieldset class="user-data">
+          <label for="Name">Name</label>
+          <input id="Name" type="text">
+
+          <label for="email">Email Address</label>
+          <input id="email" type="email">
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text">
+
+          <label for="message">Message</label>
+          <textarea id="message" type="text" rows="3"></textarea>
+        </fieldset>
+
+        <button type="submit" class="submit-button" id="register-btn" name="register">Submit!</button>
+      </form>
+</div>
+
+<%- include partials/footer -%>
