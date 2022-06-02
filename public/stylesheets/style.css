@@ -1,8 +1,268 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-family: Helvetica;
+  background-color: #fffbf0;
+  scroll-behavior: smooth;
 }
 
-a {
-  color: #00B7FF;
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
+nav {
+    background-color: rgba(43,103,119);
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: 300ms;
+}
+
+nav a {
+  color: #cfc8bb;
+  color: hsla(0,0%,100%,0.7)
+}
+
+.scrolled {
+  background-color: #fffbf0;
+  transition: 800ms;
+}
+
+.scrolled-text {
+  color: black;
+  transition: 800ms;
+}
+
+/* HEADER */
+.header {
+  background: rgb(0,0,0);
+  background: linear-gradient(110deg, rgba(43,103,119,1) 70%, #071214 100%);
+  padding: 15%;
+  
+}
+
+.header-picture-container {
+  padding: 0 5%;
+  text-align: right;
+}
+
+.header-portfolio-picture {
+  width: 60%;
+  border-radius: 100%;
+}
+
+.header-description-container {
+  padding: 5.5% 15% 0 0;
+  text-align: left;
+}
+
+.header-name {
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  margin-bottom: 1rem;
+}
+
+.header-tagline {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: hsla(0,0%,100%,0.5);
+}
+
+.header-tagline span {
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+.header-buttons {
+  height: 60%;
+}
+
+.header-buttons button {
+  background-color: #c8d8e4;
+}
+
+.link {
+  padding: 0.5rem 1rem;
+  margin: 2px;
+  transition: all 0.3s;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  /* background-color: #c8d8e4; */
+}
+
+/* ABOUT ME */
+#about-me {
+  margin: 2% auto;
+  width: 60%;
+}
+
+.about-me {
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.about-me-hello {
+  margin: 1rem;
+  letter-spacing: 6px;
+}
+
+.handwave {
+  width: 8vh;
+}
+
+.languages-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(43, 103, 119, 0.85);
+  border-radius: 10px;
+  padding: 2% 0 0.5%;
+  color: hsla(0,0%,100%,0.9);
+}
+
+.table-languages {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1rem;
+  color: hsla(0,0%,100%,0.8);
+  background-color: rgba(43, 103, 119, 0.85);
+}
+
+.table-languages td {
+  border: none;
+}
+
+.table-languages img {
+  padding: 0 5px;
+}
+
+/* PROJECTS PORTFOLIO */
+#projects {
+  background-color: #824C71;
+  margin: 5% auto 1%;
+  transform: skewY(-4deg);
+}
+
+#project-container {
+  transform: skewY(4deg);
+  margin: 2% auto 2%;
+  padding: 0% 0 0.5%;
+}
+
+#project-container .container {
+  margin: 1% auto;
+}
+
+.project-heading {
+  padding: 1%;
+  letter-spacing: 6px;
+  color: #cfc8bb;
+  font-size: 3.5rem;
+  font-weight: bold;
+  /* font-family: monospace; */
+}
+
+.project-category-heading {
+  background-color: #CEBACF;
+  letter-spacing: 2px;
+  color: #fffbf0;
+  font-size: 2.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1% auto 0;
+  /* color: hsla(0,0%,100%,0.7); */
+  border-radius: 10px;
+}
+
+.card {
+  background-color: white;
+  margin: 2% auto ;
+  /* border: 2px solid #CBC0D3; */
+  border-radius: 10px;
+}
+
+.card:hover {
+    background-color: hsla(0,0%,100%,0.7);
+}
+
+.card-body {
+  padding-bottom: 0.75rem;
+}
+
+.project-label {
+  position: relative;
+}
+
+.portfolio-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.row a {
+  color: black;
+}
+
+.row a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* MODAL POP UPS */
+.modal-img {
+  border: 2px solid #c7cacc;
+  margin: 2px 0;
+  width: 100%;
+} 
+
+/* CONTACT ME */
+.contact-me  {
+  background-color: #fffbf0;
+  padding: 1% 0 2%;
+  
+}
+
+.contact-link {
+  padding: 0.5rem 1rem;
+  margin: 2px;
+  transition: all 0.3s;
+  position: relative;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.contact-link:hover {
+text-decoration: none;
+color: black;
+}
+
+.take-a-look-link {
+  color: #ad67b1;
+  text-decoration: none;
+}
+
+.take-a-look-link:hover {
+  color: #824C71;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #fffbf0;
+  padding: 0.6% 0 0.5%;
+  background-color: rgba(43,103,119);
+  color: #fffbf0;
 }
