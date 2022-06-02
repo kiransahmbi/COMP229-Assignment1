@@ -1,0 +1,35 @@
+{
+  "name": "comp228-assignment1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "description": "Personal Portfolio",
+  
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiransahmbi/COMP228-Assignment1.git"
+  },
+  "keywords": [
+    "COMP229",
+    "Nodejs",
+    "Express",
+    "MEAN"
+  ],
+  "author": "Kirandeep Sahmbi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kiransahmbi/COMP228-Assignment1/issues"
+  },
+  "homepage": "https://github.com/kiransahmbi/COMP228-Assignment1#readme"
+}
