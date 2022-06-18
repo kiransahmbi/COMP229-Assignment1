@@ -1,5 +1,5 @@
 
-let atlasDB = "mongodb+srv://appuser:eYOcx8UyDxVS8v0c@cluster0.yemkfnv.mongodb.net/?retryWrites=true&w=majority";
+let atlasDB = "mongodb+srv://appuser:eYOcx8UyDxVS8v0c@cluster0.yemkfnv.mongodb.net/contacts?retryWrites=true&w=majority";
 
 // Database Setup
 let mongoose = require('mongoose');
