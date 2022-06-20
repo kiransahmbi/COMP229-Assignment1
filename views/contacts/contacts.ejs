@@ -1,3 +1,10 @@
+<!--
+contacts.ejs
+Kirandeep Sahmbi
+301232670
+June 18 2022
+ -->
+
 <%- include ../partials/header -%>
 
 <%- include ../partials/navbar -%>  
@@ -30,7 +37,7 @@
                     <a class="custom-button icons-container" href="/contacts/edit/<%= ContactsList[i]._id %>">
                         <img class="icons" src="/images/edit.png">
                     </a>
-                    <a class="custom-button icons-container" href="/contacts/delete/<%= ContactsList[i]._id %>">
+                    <a class="custom-button icons-container delete" href="/contacts/delete/<%= ContactsList[i]._id %>">
                         <img class="icons" src="/images/bin.png">
                     </a>
                 </td>

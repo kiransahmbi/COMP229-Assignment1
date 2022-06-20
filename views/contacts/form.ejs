@@ -1,3 +1,10 @@
+<!--
+form.ejs
+Kirandeep Sahmbi
+301232670
+June 18 2022
+-->
+ 
 <%- include ../partials/header -%>
 
 <%- include ../partials/navbar -%>  
@@ -21,28 +28,24 @@
 
             <label for="itemPhone">Phone Number</label>
             <input class="form-control"
-            id="ItemPhone"
-            placeholder="000-000-0000"
-            name="phone" 
-            value="<%= item.phone %>"
-            required>
+                id="ItemPhone"
+                placeholder="000-000-0000"
+                name="phone" 
+                value="<%= item.phone %>"
+                required>
 
             <label for="itemEmail">Email</label>
             <input type="text" class="form-control"
-            id="itemEmail"
-            placeholder="email@email.ca"
-            name="email" 
-            value="<%= item.email %>">
+                id="itemEmail"
+                placeholder="email@email.ca"
+                name="email" 
+                value="<%= item.email %>">
 
             <label></label>
-            <button class="custom-button" type="submit">
-                Submit
-            </button>
+            <button class="custom-button" type="submit">Submit</button>
             
             <label></label>
-            <a href="/contacts" class="custom-button">
-                Cancel
-            </a>
+            <a href="/contacts" class="custom-button">Cancel</a>
 
         </form>
     </div>

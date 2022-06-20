@@ -2,7 +2,7 @@ let User = require('../models/user');
 let passport = require('passport');
 
 function getErrorMessage(err) {
-    console.log("===> Erro: " + err);
+    console.log("===> Error: " + err);
     let message = '';
   
     if (err.code) {

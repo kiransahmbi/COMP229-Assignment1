@@ -32,10 +32,3 @@ exports.contactme = function(req, res, next) {
       userName: req.user ? req.user.username : '' 
     });
 }
-
-exports.signin = function(req, res, next) {
-  res.render('/signin', { 
-    title: 'Sign In',
-    userName: req.user ? req.user.username : '' 
-  });
-}
