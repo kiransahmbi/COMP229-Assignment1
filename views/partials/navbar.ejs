@@ -4,7 +4,7 @@
   <div class="nav-container">
       <ul class="navbar-nav mr-auto">
         <li class="nav-brand-container active">
-          <a class="navbar-brand hover-effect" href="/"><img class="logo" src="images/logo.png"></a>
+          <a class="navbar-brand hover-effect" href="/"><img class="logo" src="/images/logo.png"></a>
         </li>
         <li class="nav-item active">
           <a class="nav-links nav-item hover-effect" href="/about-me">About Me</a>
@@ -17,6 +17,16 @@
         </li>
         <li class="nav-item active">
           <a class="nav-links nav-item hover-effect" href="/contact-me">Contact Me</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-links nav-item hover-effect" href="/contacts">Contacts</a>
+        </li>
+        <li class="nav-item active">
+          <% if (typeof userName == 'string' && userName) { %>
+            <a class="nav-links nav-item hover-effect" href="/user/signout" onclick="return confirm('Are you sure?')">Sign Out (<%= userName %>)</a>
+          <% } else { %>
+            <a class="nav-links nav-item hover-effect" href="/user/signin">Sign In</a>
+          <% } %>  
         </li>
       </ul>
       
