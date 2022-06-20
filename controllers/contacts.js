@@ -1,58 +1,53 @@
 // Create a reference to the model
 let ContactsModel = require('../models/contacts');
 
+// Returns All Contacts
 module.exports.contactsList = function(req, res, next) {
-    ContactsModel.find( (err, contactsList) => {
+    ContactsModel.find({}).sort('name').exec( (err, contactsList) => {
         if (err) {
-            console.log(err);
             return console.error(err);
         }
         else {
-            console.log("return123" + contactsList);
             res.render('contacts/contacts', {
-                ContactsList: contactsList
+                title: "Business Contacts",
+                ContactsList: contactsList,
+                userName: req.user ? req.user.username : '' 
             });
         }
     })
 };
 
-module.exports.displayEditPage = function(req, res, next) {
+// Returns Item to be Edited
+module.exports.getEditItem = function(req, res, next) {
     let id = req.params.id;
 
     ContactsModel.findById(id, (err, itemToEdit) => {
         if (err) {
-            console.log(err);
             res.end(err);
         }
         else {
-            console.log(contactsList);
-            // res.render('inventory/add_edit', {
-            //     item: itemToEdit
-            // });
+            res.render('contacts/form', {
+                title: "Edit Item",
+                item: itemToEdit,
+                userName: req.user ? req.user.username : '' 
+            });
         }
     })
 };
 
-module.exports.processEditPage = function(req, res, next) {
+// Posts Edited Item to Database
+module.exports.postEditItem = function(req, res, next) {
     let id = req.params.id;
 
     let updatedItem = ContactsModel({
         _id: req.body.id,
-        item: req.body.item,
-        qty: req.body.qty,
-        status: req.body.status,
-        size: {
-            h: req.body.size_h,
-            w: req.body.size_w,
-            uom: req.body.size_uom,
-        },
-        tags: req.body.tags.split("").map(word => word.trim())
-
+        name: req.body.name,
+        phone: req.body.phone,
+        email: req.body.email
     });
 
     ContactsModel.updateOne({_id: id}, updatedItem, (err) => {
         if (err) {
-            console.log(err);
             res.end(err);
         }
         else {
@@ -60,3 +55,53 @@ module.exports.processEditPage = function(req, res, next) {
         }
     })
 };
+
+// Removes Item from Database
+module.exports.deleteItem = (req, res, next) => {
+    let id = req.params.id;
+
+    ContactsModel.remove({_id: id}, (err) => {
+        if(err)
+        {
+            res.end(err);
+        }
+        else
+        {
+            res.redirect('/contacts');
+        }
+    });
+}
+
+// Create New Item to be Added
+module.exports.getAddItem = (req, res, next) => {
+    let newItem = ContactsModel();
+
+    res.render('contacts/form', {
+        title: 'Add a New Item',
+        item: newItem,
+        userName: req.user ? req.user.username : '' 
+    })          
+}
+
+// Post New Item
+module.exports.postAddItem = (req, res, next) => {
+
+    let newItem = ContactsModel({
+        _id: req.body.id,
+        name: req.body.name,
+        phone: req.body.phone,
+        email: req.body.email,
+    });
+
+    ContactsModel.create(newItem, (err, item) =>{
+        if(err)
+        {
+            res.end(err);
+        }
+        else
+        {
+            res.redirect('/contacts');
+        }
+    });
+}
+
