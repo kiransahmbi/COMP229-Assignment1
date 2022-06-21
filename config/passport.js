@@ -3,7 +3,7 @@ const passport = require('passport');
 module.exports = function() {
   const User = require('../models/user');
   
-  // When user is authenticated, passowrd saves thier _id to the session
+  // When user is authenticated, password saves thier _id to the session
   passport.serializeUser((user, done) => {
     done(null, user.id);
   });

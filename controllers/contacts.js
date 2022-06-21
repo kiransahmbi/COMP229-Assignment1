@@ -94,12 +94,10 @@ module.exports.postAddItem = (req, res, next) => {
     });
 
     ContactsModel.create(newItem, (err, item) =>{
-        if(err)
-        {
+        if(err) {
             res.end(err);
         }
-        else
-        {
+        else {
             res.redirect('/contacts');
         }
     });
